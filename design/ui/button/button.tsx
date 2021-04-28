@@ -1,17 +1,34 @@
-import * as React from 'react';
+import React from 'react'
+import './style/index.scss'
 
-
-export type ButtonProps = {
+export interface ButtonProps {
+  htmlType?: 'button' | 'submit' | 'reset'
   /**
-   * a text to be rendered in the component.
+   * Is this the principal call to action on the page?
    */
-  text: string
-};
-
-export function Button({ text }: ButtonProps) {
-  return (
-    <div>
-      {text}
-    </div>
-  );
+  type?: "primary" | "secondary" | "link"
+  /**
+   * How large should the button be?
+   */
+  size?: "sm" | "medium" | "lg"
+  /**
+   * Forms contents
+   */
+  children?: React.ReactNode
+  /**
+   * Optional click handler
+   */
+  onClick?: React.MouseEventHandler
 }
+
+export const Button = ({htmlType = 'button', type = 'primary', size = 'medium', children, ...props }: ButtonProps) => {
+  return (
+    <button
+      type={htmlType}
+      className={["btn", `btn-${size}`, `btn-${type}`].join(" ")}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};

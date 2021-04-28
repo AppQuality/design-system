@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { SiteHeader } from './site-header'
 import { User } from './site-header'
 
@@ -18,5 +18,3 @@ export const LoggedOutHeader = () => (
 export const LoggedInHeader = () => (
   <SiteHeader user={testUser} />
 );
-
-//export {LoggedOutHeader}

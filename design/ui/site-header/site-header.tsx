@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {Button} from '@appquality/design.ui.button/src/button'
 import './index.scss'
 
@@ -22,7 +22,7 @@ const SiteHeader = ({ user, logo }: SiteHeaderProps) => {
         <div className="user-avatar"></div>
         <div className="user-name"></div>
         <div className="user-id"></div>
-        <Button text='logout'></Button>
+        <Button size='sm' htmlType='button'>logout</Button>
       </div>
   )
 
@@ -39,7 +39,7 @@ const SiteHeader = ({ user, logo }: SiteHeaderProps) => {
       <div className="header-actions">
         {(user)
           ? <UserInfo />
-          : <Button text='login'></Button>
+          : <Button>login</Button>
         }
       </div>
     </div>
