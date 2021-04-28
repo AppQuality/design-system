@@ -1,3 +1,4 @@
+@import "../../theme/aq-bootstrap";
 
 $btn-font-size: $font-size-base;
 $btn-font-size-sm: $font-size-sm;
@@ -34,3 +35,5 @@ $btn-icon-padding-x-lg: 0;
 } @else {
   $btn-icon-padding-x-lg: $btn-padding-y-lg - $btn-padding-x-lg;
 }
+@import "node_modules/bootstrap/scss/buttons";
+

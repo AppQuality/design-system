@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button} from '@appquality/design.ui.button/src/button'
-import './index.scss'
+import './site-header.scss'
 
 interface User {
     id: number
