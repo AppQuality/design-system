@@ -1,5 +1,6 @@
-import * as React from 'react';
-import {Button} from '@appquality/design.ui.button';
+import * as React from 'react'
+import {Button} from '@appquality/design.ui.button/src/button'
+import './index.scss'
 
 interface User {
     id: number
@@ -11,9 +12,6 @@ interface User {
 }
 
 type SiteHeaderProps = {
-  /**
-   * a text to be rendered in the component.
-   */
   user?: User
   logo?: React.ReactNode
 };
@@ -29,7 +27,7 @@ const SiteHeader = ({ user, logo }: SiteHeaderProps) => {
   )
 
   return (
-    <div>
+    <div className='site-header'>
       <div className='brand-logo'>
         {(logo)
           ? {logo}
@@ -48,4 +46,4 @@ const SiteHeader = ({ user, logo }: SiteHeaderProps) => {
   )
 }
 
-export {SiteHeader, SiteHeaderProps};
+export {SiteHeader, SiteHeaderProps, User};
