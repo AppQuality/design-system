@@ -6,7 +6,7 @@ export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  type?: "primary" | "secondary" | "link"
+  type?: "primary" | "secondary" | "success" | "danger" | "warning" | "info" | "link"
   /**
    * How large should the button be?
    */

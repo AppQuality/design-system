@@ -18,12 +18,17 @@ type SiteHeaderProps = {
 
 const SiteHeader = ({ user, logo }: SiteHeaderProps) => {
   const UserInfo = () => (
-      <div className='user-info'>
-        <div className="user-avatar"></div>
-        <div className="user-name"></div>
-        <div className="user-id"></div>
-        <Button size='sm' htmlType='button'>logout</Button>
+    <div className='user-info'>
+      <div className="user-avatar">
+        <img src={user.image} />
       </div>
+      <div className="user-name">
+        {user.name} {user.surname} <span className="user-id">(T{user.id})</span>
+      </div>
+      <Button size='sm' type='link'>
+        logout
+      </Button>
+    </div>
   )
 
   return (
@@ -39,7 +44,7 @@ const SiteHeader = ({ user, logo }: SiteHeaderProps) => {
       <div className="header-actions">
         {(user)
           ? <UserInfo />
-          : <Button>login</Button>
+          : <Button size='sm' type='link'>login</Button>
         }
       </div>
     </div>

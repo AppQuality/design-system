@@ -5,12 +5,14 @@ specifiers:
   '@testing-library/react': ^11.2.6
   '@types/jest': ^26.0.23
   bootstrap: ^5.0.0-beta3
+  bootstrap-icons: ^1.4.1
   react: ^17.0.2
   react-dom: ^17.0.2
 
 dependencies:
   '@babel/runtime': 7.13.17
   bootstrap: 5.0.0-beta3
+  bootstrap-icons: 1.4.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
 
@@ -155,6 +157,11 @@ packages:
       '@babel/runtime': 7.13.17
       '@babel/runtime-corejs3': 7.13.17
     dev: true
+
+  /bootstrap-icons/1.4.1:
+    resolution: {integrity: sha512-EcATaAGsRgyy4NtnwXlNzkgWttpb6PqcXCoLtZZKdZtAYJU/WYqoQFxuGFKAppOlf7NmKpvGtSsC/921H7LIjg==}
+    engines: {node: '>=10'}
+    dev: false
 
   /bootstrap/5.0.0-beta3:
     resolution: {integrity: sha512-0urccjfIOzhrb9qJysN8XW/DRw6rg3zH7qLeKIp4Zyl8+Ens4JWB0NC0cB5AhnSFPd2tftRggjwCMxablo6Tpg==}
